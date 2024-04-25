@@ -57,6 +57,7 @@
                 if (kullaniciBilgisi.kullanici === isim.value && kullaniciBilgisi.sifre === soyad.value) {
                     window.location.href = "Proje1.html"; 
                     console.log("Doğru giriş yaptınız");
+                    localStorage.setItem('mesaj','Key');
                 }  
                 else {
                     console.log("Kullanıcı adınızı ya da şifrenizi yanlış girdiniz");

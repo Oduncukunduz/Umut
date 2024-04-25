@@ -19,6 +19,18 @@ function test(){
     arkaplan.style.backgroundImage="url('arkaplan.jpg')"
     }
     }
+if (!localStorage.getItem('mesaj')) {
+   window.location.href = 'gırıs.html';
+}
+//     else{
+//  window.location.href = 'Proje1.html';
+// } 
+
+
+
+
+
+
 
 
 
