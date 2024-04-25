@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('agac.jpg');
+            background-size: cover;
+        }
+
+        .input {
+            background-color: rgba(155, 148, 148, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .input label, .input input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .input button {
+            margin-top: 10px;
+        }
+    </style>
     <title>Kunduz Kayıt</title>
 </head>
-<body style="display: flex;justify-content: center;flex-direction: column;align-items: center;background-image: url('arkaplan.jpg');background-size: cover;">
+<body>
+    <div class="input">
+        <form id="kayıtFormu">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Kullanıcı Adınızı Giriniz">
+            <label for="soyad">Şifre:</label>
+            <input type="text" id="soyad" placeholder="Şifrenizi Giriniz">
+            <button type="button" onclick="giris()">Giriş Yap</button>
+            <button type="button" onclick="kayit()">Kayıt Ol</button>
+        </form>
+    </div>
 
-    <label for="fname">Kullanıcı Adı:</label>
-    <input type="text" id="fname" name="fname" placeholder="Kullanıcı Adınızı Giriniz"><br><br>
-    
-    <label for="lname">Şifre:</label>
-    <input type="text" id="lname" name="lname" placeholder="Şifrenizi Giriniz"><br><br>
-    
-    <button type="button" onclick="kayit1()">Giriş Yap</button>
-    <button type="button" onclick="kayit()">Kayıt Ol</button>
+    <script>
+        var isim = document.getElementById("username");
+        var soyad = document.getElementById("soyad");
+        var kullanicilar = [];
 
+        function kayit() {
+            kullanicilar.push({ kullanici: isim.value, sifre: soyad.value });
+            console.log(kullanicilar);
+            console.log(isim.value, soyad.value, "Kayıt yaptığınız için teşekkür ederiz");
+            document.getElementById("kayıtFormu").reset();
+        }
+
+        function giris() {
+            kullanicilar.forEach(function (kullaniciBilgisi) {
+                if (kullaniciBilgisi.kullanici === isim.value && kullaniciBilgisi.sifre === soyad.value) {
+                    window.location.href = "Proje1.html"; 
+                    console.log("Doğru giriş yaptınız");
+                }  
+                else {
+                    console.log("Kullanıcı adınızı ya da şifrenizi yanlış girdiniz");
+                }
+            });
+        }
+    </script>
 </body>
 </html>

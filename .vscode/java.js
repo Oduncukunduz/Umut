@@ -1,43 +1,44 @@
 var x= true
-// var y = true
- var arkaplan = document.body
-// var isim = document.getElementById("username")
-// var soyad = document.getElementById("soyad")
-// var kulanıcı = []
+var y = true
+var arkaplan = document.body
+var isim = document.getElementById("username")
+var soyad = document.getElementById("soyad")
+var kulanıcı = []
 function test(){
     if(x){
-        document.getElementById('31').src='kunduz2.webp'
+        document.getElementById('31').src='kunduz.webp'
         x=false
         console.log("test1")
-        arkaplan.style.backgroundImage="url('arkaplan.jpg')"
+        arkaplan.style.backgroundImage="url('ates.jpg')"
     
     }
     else{
-        document.getElementById('31').src='kunduz.jpg'
+        document.getElementById('31').src='kunduz2.jpg'
         x=true
         console.log("test2")
-    arkaplan.style.backgroundImage="url('arka.jpg')"
+    arkaplan.style.backgroundImage="url('arkaplan.jpg')"
     }
     }
-// function test1(){
-// if(x){
-//     document.getElementById('31').src='kunduz2.webp'
-//     x=false
-//     console.log("test1")
-//     arkaplan.style.backgroundImage="url('ates')"
 
-// }
-// }
-// function test2(){
-//    if(x){ 
-//     document.getElementById('31').src='kunduz.webp'
-//     x=true
-//     console.log("test2")
-// arkaplan.style.backgroundImage="url('arkaplan.jpg')"
-// }
-// }
 
-// function kayit(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function kayit(){
 //     kulanıcı.push({kulanıcı:isim.value,şifre:soyad.value})
 //     console.log(kulanıcı)
 
@@ -48,7 +49,7 @@ function test(){
 //     }
 // function giris(){
 //     console.log(kulanıcı[0].username)
-//     kulanıcı.forEach(kulanıcıbilgisi => {
+//     kulanıcı.forEach(kulanıcıbilgisi)
 //         if(kulanıcıbilgisi.kulanıcı === isim.value && kulanıcıbilgisi.şifre === soyad.value ){
 //             console.log("doğru giriş yaptınız")
 
@@ -58,18 +59,19 @@ function test(){
 
 
 //         }
-//     })
+//     }
+    
 
 
-    //  if(kulanıcı[0].kulanıcı === isim.value && kulanıcı[0].şifre === soyad.value ){
+//      if(kulanıcı[0].kulanıcı === isim.value && kulanıcı[0].şifre === soyad.value ){
 
-    //     console.log("Tebrikler Giriş yaptınız")
-    //     document.getElementById("kayıt").reset()
-
-
+//         console.log("Tebrikler Giriş yaptınız")
+//         document.getElementById("kayıt").reset()
 
 
-    //  }
+
+
+//      }
 
 
 

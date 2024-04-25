@@ -2,68 +2,82 @@
 <html>
 
 <head>
-    <title>Kunduzlar İçin ağaç kesme Rehberi</title>
+    <title>Kunduzlar İçin Ağaç Kesme Rehberi</title>
     <style>
-        h1 {
+        h1, h2, h3 {
             text-align: center;
-            color: tomato
         }
-        h3 {
 
-            text-align: center;
+        h1 {
+            color: black;
+        }
+
+        h2 {
+            color: bisque;
+        }
+
+        h3 {
             color: white;
         }
+
         table {
-            border: 5px solid green;
+            border: 2px solid green;
             margin: 0 auto; /* Tabloyu ortalamak için */
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('arkaplan.jpg');
+            background-size: cover;
+            
+        }
+
+        .content {
+            background-image: url('arka.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 24px;
         }
     </style>
 </head>
 
-<body style="display: flex;justify-content: center;flex-direction: column;align-items: center;background-image: url('arkaplan.jpg');background-size: cover;" id ="30" onclick="test()">
+<body>
+    <h1>Kunduzlar İçin Ağaç Kesme</h1>
+    <img style="width: 300px;" src="kunduz.webp" id="31" onclick="test()">
 
+    <div class="content">
+        <table>
+            <tr>
+                <td>
+                    <h3>Ağaç belirleme</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Ağaç türünü belirleme</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Düşeceği alanı tarama</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Ağacı kesme</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
 
+    <h2>Daha fazla bilgi için <a href="https://tr.wikipedia.org/wiki/Kunduz" target="_blank">ziyaret edebilirsiniz</a></h2>
 
-
-    <h1>Kunduzlar İçin ağaç kesme</h1>
-    <img style="width: 300px;" src="kunduz.webp" id="31" onclick="test()" >
-    <div style="display: flex; flex-direction: column;align-items: center;background-image: url(arka.jpg);margin-top: 24px; ">
-
-    <table>
-
-
-        <tr>
-            <td>
-                <h3>1. Ağaç belirleme</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>2. Ağcin türünü belirleme</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>3. Düşüceği alani tarama</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>4.Ağci kesme</h3>
-            </td>
-        </tr>
-        <script src="kunduhareket.js"></script>
-    </table>
-</div>
-
-<div>
-    <tr>
-        <td>
-            <h1> Daha fazla bilgi için<a href="https://tr.wikipedia.org/wiki/Kunduz"target="_blank">ziyaret edebilirisniz</a><br></h1>
-        </td>
-    </tr>
-<script src="kunduhareket.js"></script>
+    <script src="java.js"></script>
 </body>
-
 
 </html>
